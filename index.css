@@ -1,0 +1,118 @@
+:root{
+    --aifontFamily: monospace;
+    --userfontFamily: sans-serif;
+    --aiFontColor:#ffffff;
+    --userFontColor:#624d4d;
+}
+body{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    row-gap: 20px; 
+
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+#wlcm-Container{
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
+}
+
+#chat-Container{
+ background-color: #a677c6;
+ border-radius: 10px 10px 0 0;
+ overflow: auto;
+height: 200px;
+ width:70%;
+ font-family: var(--aifontFamily);
+ font-size: 16px;
+ color: var(--aiFontColor);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+@media screen  and (max-width:562px) {
+    width:90%;
+}
+
+}
+
+#ai-Response{
+    text-transform: capitalize;
+}
+
+#aiMsgContainer{
+    height: 120px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#user-Container{
+    
+    background-color: #e4c3ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--userfontFamily);
+    color: var(--userFontColor);
+    height: 100px;
+    width:70%;
+    @media screen  and (max-width:562px) {
+        width:90%;
+    }
+}
+
+.feeling-element{
+    font-size: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.feeling-element:hover{
+    font-size: 55px;
+}
+
+#userInputTxt{
+    width: 95%;
+    height: 75%;
+    font-family: var(--userfontFamily);
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+}
+
+#userInputTxt:focus{
+    outline: none;
+    border: none;
+
+}
+
+#sendUserResponse{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    font-family: var(--userfontFamily);
+    color: #646363;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#sendUserResponse:hover{
+    background-color: #b4eaf9;
+    
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiya: Your AI Buddy</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+    <!-----------Chat Container------------>
+  <div id="chat-Container">
+    <!------------Welcome graphic------------>
+    <img src="sleeping.gif" id="wlcm-Container" loading="eager" alt="graphic-gif" style=" height:100px; width:100px;">
+    <div id="aiMsgContainer">
+      <p id="ai-Response"> </p>
+    </div>
+    
+  </div>  
+  <!----------User Interact Conatiner---------->
+  <div id="user-Container">
+    <input id="userInputTxt" type="text" placeholder="Click here if you want me to wake up..." maxlength="14">
+  </div> 
+  <!---------Submit Button-------------------->
+
+  <button id="sendUserResponse" type="submit">
+   Submit 
+  </button>
+ 
+ <script src="index.js" type="module" ></script>
+</body>
+</html>
